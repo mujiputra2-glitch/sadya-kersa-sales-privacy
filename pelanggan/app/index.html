@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src https://script.google.com https://script.googleusercontent.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="theme-color" content="#2728C0">
+<title>Sadya Kersa Pelanggan</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<script>window.SKP_API = {"url":"https://script.google.com/macros/s/AKfycbwzm6vI7CH0DHvUhK8n6pCoSvNnOQgrvN453tYC5upts-OmrElAP5eH-1k0rrLAGQy5/exec","version":"1.0.0","mode":"prod","privacy":"https://mujiputra2-glitch.github.io/sadya-kersa-sales-privacy/pelanggan/"};</script>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+  :root {
+    --ink: #16174F; --body: #2E3048; --muted: #5E6079; --brand: #2728C0; --brand2: #1E1F9C; --orange: #FB4305; --cta: #D93800; --sky: #3152BF;
+    --tint: #ECECFB; --line: #DCDDEE; --bg: #F5F5FA; --card: #FFFFFF; --green: #15803D; --red: #DC2626; --grey: #9A9CB0;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  body { font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 17px; line-height: 1.45; color: var(--body); min-height: 100vh; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  .hide { display: none !important; }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 0 16px 110px; }
+  h1 { font-size: 22px; line-height: 1.2; color: #fff; margin: 0; font-weight: 800; }
+  h2 { font-size: 19px; color: var(--ink); margin: 22px 0 10px; font-weight: 800; }
+  .muted { color: var(--muted); } .small { font-size: 14px; }
+
+  .top { background: var(--brand); color: #fff; padding: 18px 16px 22px; position: relative; overflow: hidden; }
+  .top .in { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .top .sub { color: #D3D4F8; font-size: 14px; }
+  .top.homebar { padding-bottom: 46px; background: linear-gradient(135deg, #1B1C93 0%, #2728C0 72%); }
+  .top.homebar::before { content: ''; position: absolute; left: 0; top: 0; width: 26%; height: 64%; background: var(--sky); clip-path: polygon(0 0, 100% 0, 0 100%); }
+  .top.homebar::after { content: ''; position: absolute; right: 0; bottom: 0; width: 44%; height: 100%; background: var(--orange); clip-path: polygon(100% 22%, 100% 100%, 18% 100%); }
+  .brandrow { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .mark { flex: none; width: 44px; height: 44px; border-radius: 12px; overflow: hidden; background: var(--brand); box-shadow: 0 0 0 2px rgba(255, 255, 255, .85), 0 4px 12px rgba(0, 0, 0, .22); }
+  .mark svg { display: block; width: 100%; height: 100%; }
+  .iconbtn { background: transparent; border: 1px solid rgba(255, 255, 255, .32); color: #fff; border-radius: 12px; min-width: 46px; height: 46px; padding: 0 12px; display: inline-flex; align-items: center; justify-content: center; }
+  .back { background: transparent; border: 0; color: #fff; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; padding: 8px 0; min-height: 44px; font-size: 16px; }
+
+  .float { background: var(--card); border-radius: 20px; box-shadow: 0 10px 28px rgba(22, 23, 79, .10), 0 1px 3px rgba(22, 23, 79, .06); padding: 16px; margin-top: 14px; }
+  .float.lift { margin-top: -34px; position: relative; z-index: 2; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin-top: 12px; }
+  .caption { font-size: 13px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; color: var(--brand2); margin: 22px 2px 8px; }
+  .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .stats > * { min-width: 0; text-align: center; border: 0; background: transparent; padding: 0; color: inherit; }
+  .stats b { display: block; font-size: 20px; line-height: 1.2; color: var(--ink); font-weight: 800; overflow-wrap: anywhere; }
+  .stats span { display: block; font-size: 13px; line-height: 1.3; color: var(--muted); margin-top: 2px; overflow-wrap: anywhere; }
+  .stats > * + * { border-left: 1px solid var(--line); }
+  .stats .warn b { color: var(--cta); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border-radius: 14px; border: 1px solid var(--line); background: var(--card); padding: 0 16px; font-weight: 700; color: var(--ink); text-decoration: none; }
+  .btn.brand { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .btn.cta { background: var(--cta); border-color: var(--cta); color: #fff; }
+  .btn.wa { background: #1DA851; border-color: #1DA851; color: #fff; }
+  .btn.block { width: 100%; }
+  .btn svg { flex: none; width: 22px; height: 22px; }
+  .btnrow { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .btnrow > * { flex: 1 1 40%; }
+
+  .item { display: flex; align-items: center; gap: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; margin-top: 8px; width: 100%; text-align: left; color: inherit; }
+  .item .t { flex: 1; min-width: 0; }
+  .item .t b { display: block; color: var(--ink); font-size: 17px; line-height: 1.3; }
+  .item .t span { display: block; font-size: 14px; color: var(--muted); line-height: 1.35; margin-top: 2px; }
+  .item .r { text-align: right; font-size: 13px; color: var(--muted); flex: none; }
+  .item .r b { display: block; color: var(--ink); font-size: 15px; }
+  .item svg.go { flex: none; width: 20px; height: 20px; color: var(--muted); }
+  .tag { display: inline-block; font-style: normal; font-size: 13px; font-weight: 700; line-height: 1.35; border-radius: 999px; padding: 2px 10px; background: var(--tint); color: var(--brand2); }
+  .tag.amber { background: #FFE8DD; color: #8F2B00; } .tag.green { background: #DDF3E4; color: #13642F; } .tag.red { background: #FDE7E7; color: #B42318; } .tag.grey { background: #EEEEF5; color: #4E5068; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .note { background: var(--tint); border-radius: 12px; padding: 10px 12px; font-size: 14px; margin-top: 12px; color: var(--ink); }
+  .note.amber { background: #FFE8DD; color: #8F2B00; }
+  .err { color: var(--red); font-weight: 600; margin-top: 12px; font-size: 15px; }
+  .chip { border: 1.5px solid var(--line); background: var(--card); border-radius: 999px; padding: 8px 14px; font-weight: 600; font-size: 15px; min-height: 44px; color: var(--ink); flex: none; }
+  .chip.on { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .seg { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; margin-top: 12px; scrollbar-width: none; }
+  .seg::-webkit-scrollbar { display: none; }
+  .field { margin-top: 16px; }
+  .field > label { display: block; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+  input[type=text], input[type=tel], input[type=email], input[type=password], textarea { width: 100%; border: 1.5px solid var(--line); border-radius: 14px; padding: 13px 14px; background: #fff; min-height: 52px; outline: none; }
+  input:focus, textarea:focus { border-color: var(--brand); }
+  textarea { min-height: 90px; resize: vertical; }
+  .pin { letter-spacing: 10px; font-size: 26px; text-align: center; font-weight: 800; }
+  .kv { display: grid; grid-template-columns: minmax(0, 1fr) fit-content(62%); gap: 6px 14px; font-size: 16px; margin: 0; }
+  .kv dt { color: var(--muted); overflow-wrap: anywhere; } .kv dd { margin: 0; color: var(--ink); font-weight: 600; text-align: right; overflow-wrap: anywhere; }
+  .lrow { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 15px; color: var(--ink); }
+  .lrow span { min-width: 0; overflow-wrap: anywhere; } .lrow em { display: block; font-style: normal; font-size: 13px; color: var(--muted); } .lrow b { flex: none; }
+
+  .steps { display: flex; gap: 0; margin: 14px 0 4px; }
+  .steps div { flex: 1; text-align: center; font-size: 12px; color: var(--muted); position: relative; padding-top: 22px; }
+  .steps div::before { content: ''; position: absolute; top: 4px; left: 50%; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: var(--line); z-index: 1; }
+  .steps div::after { content: ''; position: absolute; top: 10px; left: -50%; width: 100%; height: 3px; background: var(--line); }
+  .steps div:first-child::after { display: none; }
+  .steps div.on { color: var(--ink); font-weight: 700; } .steps div.on::before, .steps div.on::after { background: var(--brand); }
+
+  .doc { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin-top: 12px; color: var(--ink); }
+  .dochead { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 3px solid var(--orange); }
+  .dochead .logo { height: 34px; width: auto; }
+  .dochead div { text-align: right; } .dochead div b { display: block; font-size: 16px; letter-spacing: 1px; color: var(--brand); } .dochead div span { font-size: 14px; font-weight: 700; }
+  .dtab { width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 12px; font-size: 14px; }
+  .dtab th { text-align: left; font-size: 12px; color: var(--muted); border-bottom: 1px solid var(--line); padding: 6px 4px; }
+  .dtab td { border-bottom: 1px solid var(--line); padding: 8px 4px; vertical-align: top; overflow-wrap: anywhere; }
+  .dtab td.n, .dtab th.n { text-align: right; width: 22%; overflow-wrap: normal; }
+  .dtab td.v, .dtab th.v { width: 38%; }
+  @media (max-width: 360px) { .doc { padding: 12px; } .dtab { font-size: 13px; } }
+  .dtab th.no { width: 30px; }
+  .dtab tfoot td { font-weight: 800; border-bottom: 0; border-top: 2px solid var(--ink); }
+  .sign { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; font-size: 13px; color: var(--muted); text-align: center; }
+  .sign span { display: block; min-height: 56px; border-bottom: 1px solid var(--ink); margin-bottom: 4px; padding-top: 8px; color: var(--ink); font-weight: 700; }
+  .sjphoto { display: block; width: 100%; max-height: 420px; object-fit: contain; border-radius: 12px; margin-top: 12px; background: var(--bg); }
+
+  .nav { position: fixed; left: 0; right: 0; bottom: 0; background: #fff; border-top: 1px solid var(--line); display: flex; justify-content: center; padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); z-index: 20; }
+  .nav .in { display: grid; grid-template-columns: repeat(4, 1fr); width: 100%; max-width: 560px; gap: 4px; }
+  .nav button { position: relative; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 13px; font-weight: 700; color: var(--muted); padding: 6px 0; min-height: 58px; border-radius: 12px; }
+  .nav button svg { width: 26px; height: 26px; }
+  .nav button.on { color: var(--brand); background: var(--tint); }
+  .nav button i { position: absolute; top: 4px; left: 54%; min-width: 18px; height: 18px; border-radius: 9px; background: var(--cta); color: #fff; font-style: normal; font-size: 11px; line-height: 18px; padding: 0 5px; }
+
+  .login { max-width: 420px; margin: 0 auto; padding: 40px 20px; }
+  .login .logo { display: block; height: 52px; width: auto; margin-bottom: 18px; }
+  .login h1 { color: var(--ink); font-size: 24px; }
+  .overlay { position: fixed; inset: 0; background: rgba(22, 23, 79, .35); display: flex; align-items: center; justify-content: center; z-index: 50; }
+  .overlay .box { background: #fff; border-radius: 16px; padding: 18px 22px; font-weight: 700; color: var(--ink); display: flex; gap: 12px; align-items: center; }
+  .spin { width: 22px; height: 22px; border: 3px solid var(--tint); border-top-color: var(--brand); border-radius: 50%; animation: sp .8s linear infinite; }
+  @keyframes sp { to { transform: rotate(360deg); } }
+  .toast { position: fixed; left: 50%; bottom: 96px; transform: translateX(-50%); background: var(--ink); color: #fff; padding: 12px 18px; border-radius: 12px; font-weight: 600; z-index: 60; width: max-content; max-width: calc(100vw - 32px); text-align: center; }
+  .sheet { position: fixed; inset: 0; background: rgba(22, 23, 79, .45); z-index: 40; display: flex; align-items: flex-end; justify-content: center; }
+  .sheet .panel { background: var(--bg); width: 100%; max-width: 560px; max-height: 92vh; overflow-y: auto; border-radius: 20px 20px 0 0; padding: 18px 16px 28px; }
+  .sheet .panel h2 { margin-top: 0; }
+  .updbar { position: sticky; top: 0; z-index: 30; background: #FFE8DD; color: #8F2B00; padding: 10px 16px; font-size: 15px; font-weight: 700; }
+  #main.anim .rise { animation: rise .45s cubic-bezier(.2, .7, .2, 1) both; animation-delay: calc(var(--i, 0) * 55ms); }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
+  @media (prefers-reduced-motion: reduce) { #main.anim .rise { animation: none; } }
+  @media print {
+    body * { visibility: hidden !important; }
+    .doc, .doc * { visibility: visible !important; }
+    .doc { position: absolute; left: 0; top: 0; width: 100%; border: 0; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div id="vLogin" class="login hide">
+  <svg class="logo" role="img" aria-label="Sadya Kersa" xmlns="http://www.w3.org/2000/svg" viewBox="127.00 58.00 176.60 52.30"><path fill="#fb4305" fill-rule="evenodd" d="M157.72 78.50L183.77 78.50L183.77 88.90L183.77 88.90L169.11 88.90C168.27 88.90 167.58 89.59 167.58 90.43L167.58 90.43C167.58 91.28 168.27 91.97 169.11 91.97L183.77 91.97L183.77 108.90L170.40 108.90L170.40 95.53C170.40 94.69 169.71 94.00 168.87 94.00L168.86 94.00C168.02 94.00 167.33 94.69 167.33 95.53L167.33 108.90L153.96 108.90L153.96 88.90L127.52 88.90L127.52 82.96L127.52 78.80L145.89 78.80C146.73 78.80 147.42 78.11 147.42 77.26L147.42 77.26C147.42 76.42 146.73 75.73 145.89 75.73L127.52 75.73L127.52 58.49L157.72 58.49L157.72 68.99L139.35 68.99C138.51 68.99 137.82 69.68 137.82 70.53L137.82 70.53C137.82 71.37 138.51 72.06 139.35 72.06L157.72 72.06L157.72 78.50Z"/><path fill="#2728c0" fill-rule="evenodd" d="M196.20 92.75C197.05 92.75 197.99 92.77 198.83 92.72C199.61 92.67 200.42 92.55 201.19 92.51C201.54 92.50 201.96 92.40 202.32 92.33L204.29 91.71C204.49 91.63 204.92 91.39 205.08 91.26C206.21 90.30 206.78 89.55 206.74 87.70C206.73 87.43 206.59 86.83 206.51 86.62C206.41 86.36 206.24 85.99 206.10 85.77C205.98 85.59 205.67 85.29 205.45 85.10C204.63 84.38 203.14 84.08 202.05 83.90C201.83 83.86 201.76 83.80 201.57 83.78L200.44 83.64C200.01 83.61 199.56 83.62 199.12 83.61C198.76 83.59 198.44 83.53 197.97 83.51C196.69 83.47 194.16 83.43 193.00 83.32C192.32 83.25 191.41 83.10 191.32 82.42C191.25 81.90 191.49 81.78 191.83 81.61C192.26 81.40 192.20 81.39 192.81 81.37C193.29 81.35 193.54 81.25 194.02 81.25C195.23 81.24 199.16 81.17 200.00 81.50C200.49 81.69 200.65 81.67 200.96 82.02C201.86 83.04 199.32 82.87 206.18 82.87C206.58 82.87 206.46 82.62 206.45 82.19C206.43 81.46 206.12 80.74 205.76 80.15C205.07 79.01 203.51 78.45 202.25 78.16C201.34 77.94 199.92 77.76 199.01 77.74C197.98 77.72 193.77 77.67 193.01 77.76C192.30 77.85 191.57 77.97 190.81 78.05L189.01 78.46C189.00 78.46 188.99 78.47 188.98 78.48C188.96 78.48 188.95 78.49 188.94 78.49C188.13 78.83 187.91 78.88 187.14 79.51C186.65 79.92 186.39 80.52 186.19 81.14C185.98 81.80 185.99 82.76 186.18 83.38C186.82 85.44 188.20 85.43 189.05 85.91C189.35 86.07 190.00 86.14 190.35 86.19C190.56 86.23 190.62 86.28 190.86 86.30C191.07 86.32 191.30 86.31 191.50 86.33C191.80 86.36 191.72 86.42 191.97 86.46C192.36 86.51 192.83 86.48 193.18 86.51C194.79 86.67 196.52 86.56 198.15 86.67C198.55 86.69 198.57 86.74 199.35 86.77C199.92 86.80 199.98 86.88 200.44 86.95C200.76 87.00 201.06 87.20 201.25 87.41C201.56 87.73 201.47 88.48 201.11 88.71C200.60 89.03 199.79 89.02 199.59 89.09C199.03 89.28 197.86 89.19 197.17 89.19C195.62 89.19 193.96 89.23 192.47 89.01C192.20 88.97 191.62 88.72 191.43 88.56C191.06 88.27 191.17 87.97 190.98 87.61C189.73 87.55 187.46 87.60 186.11 87.60L186.16 87.60C185.70 87.60 185.72 87.69 185.79 88.21C185.80 88.30 185.91 88.92 185.94 89.02L186.22 89.77C186.51 90.39 187.03 90.99 187.62 91.35C188.34 91.79 188.18 91.66 188.79 91.95C189.25 92.18 190.93 92.49 191.46 92.54C191.80 92.57 192.02 92.60 192.33 92.64C193.07 92.75 195.35 92.75 196.20 92.75"/><path fill="#2728c0" fill-rule="evenodd" d="M240.35 88.80C239.14 88.80 236.99 88.84 235.89 88.78C235.82 87.94 235.85 82.89 235.87 81.73C236.61 81.66 240.34 81.70 241.56 81.71C241.96 81.71 243.16 81.91 243.47 81.99C243.75 82.06 243.69 82.00 243.93 82.12C245.53 82.91 245.81 83.61 245.81 85.29C245.80 86.32 245.64 87.10 244.93 87.74C243.73 88.83 241.86 88.80 240.35 88.80ZM230.67 78.13C230.59 78.72 230.64 89.99 230.64 91.14C230.64 92.50 230.52 92.38 231.12 92.36C234.04 92.31 242.70 92.51 244.40 92.15C244.98 92.03 246.74 91.74 247.25 91.50L247.41 91.42C247.93 91.23 248.68 90.75 249.06 90.39C249.16 90.30 249.27 90.21 249.36 90.12C249.46 90.03 249.53 89.96 249.61 89.84C249.77 89.62 249.95 89.46 250.09 89.24C250.36 88.76 250.72 87.78 250.85 87.23C250.89 87.06 250.87 86.93 250.90 86.76C251.06 85.85 251.05 85.73 251.03 84.72C251.01 83.96 250.73 82.63 250.38 81.97L250.14 81.53C249.99 81.17 249.94 81.15 249.60 80.75C248.85 79.88 248.44 79.76 247.70 79.37C247.09 79.05 246.79 78.98 246.19 78.77C245.51 78.52 245.01 78.54 244.80 78.48C244.63 78.44 244.70 78.40 244.42 78.36C242.60 78.11 241.15 78.12 239.26 78.12C237.66 78.12 231.75 78.03 230.67 78.13"/><path fill="#2728c0" fill-rule="evenodd" d="M215.74 87.20C215.73 86.77 216.30 86.08 216.60 85.51L217.51 83.95C217.61 83.78 217.70 83.64 217.81 83.45C217.96 83.17 217.93 83.19 218.16 83.02L219.12 84.75C219.40 85.38 219.25 84.83 219.49 85.35C219.72 85.84 220.46 86.72 220.46 87.20L215.74 87.20ZM206.93 92.34C207.41 92.41 211.08 92.35 212.03 92.36C212.51 92.37 212.52 92.40 212.69 92.20C212.69 92.19 212.70 92.18 212.71 92.17C212.98 91.80 213.21 91.24 213.52 90.81C214.31 90.71 222.47 90.72 222.71 90.84C222.93 90.97 223.53 92.31 223.78 92.36C224.55 92.36 228.91 92.46 229.25 92.31C229.25 92.30 229.25 92.28 229.25 92.27C229.25 92.27 229.25 92.24 229.25 92.24C229.25 92.22 229.25 92.18 229.24 92.16C229.22 92.08 229.20 92.08 229.16 92.02L228.84 91.42C228.64 90.98 228.68 91.17 228.50 90.90L226.08 86.72C225.95 86.50 225.86 86.38 225.74 86.14L224.12 83.40C223.75 82.84 223.94 83.00 223.43 82.32L221.50 78.97C220.97 78.20 221.16 78.11 220.57 78.11C219.14 78.11 216.46 78.05 215.29 78.13C215.01 78.46 214.49 79.52 214.21 79.91C213.77 80.52 213.44 81.26 213.17 81.68C212.60 82.56 212.11 83.47 211.58 84.33C211.40 84.62 211.24 84.94 211.08 85.22L210.25 86.56C210.13 86.74 210.12 86.82 210.01 87.00L206.93 92.34Z"/><path fill="#2728c0" fill-rule="evenodd" d="M277.18 87.23C277.17 86.96 277.15 87.06 277.26 86.87L278.02 85.63C278.13 85.46 278.22 85.31 278.31 85.12C278.44 84.89 279.37 83.24 279.58 83.11C279.79 83.19 280.78 84.99 280.87 85.14C281.10 85.52 281.07 85.62 281.38 85.96C281.54 86.14 281.47 86.10 281.58 86.32C281.58 86.32 281.64 86.41 281.65 86.43C281.71 86.55 281.73 86.56 281.80 86.68C281.90 86.86 281.96 86.96 282.02 87.22L277.18 87.23ZM268.44 92.35C270.14 92.40 271.86 92.34 273.56 92.36C274.17 92.37 273.98 92.42 274.23 92.05C274.51 91.65 274.74 91.20 274.99 90.81C275.62 90.72 276.66 90.78 277.34 90.78C278.42 90.78 283.93 90.70 284.18 90.84C284.40 90.95 284.93 92.04 285.14 92.33C285.65 92.42 290.48 92.42 290.72 92.31L290.73 92.24C290.73 92.22 290.73 92.17 290.72 92.16C290.70 92.05 290.68 92.05 290.65 92.00C290.61 91.93 290.53 91.80 290.48 91.71L289.32 89.77C289.28 89.71 289.19 89.56 289.15 89.49C289.04 89.29 288.93 89.12 288.84 88.94L286.22 84.50C285.82 83.75 285.59 83.45 285.23 82.85L284.49 81.59C284.48 81.58 284.45 81.54 284.44 81.52L284.40 81.45C284.34 81.35 284.34 81.27 284.28 81.16L282.97 78.97C282.48 78.35 282.81 78.12 282.05 78.11L276.77 78.13C276.62 78.20 275.89 79.63 275.69 79.91L275.16 80.82C275.05 80.99 274.99 81.09 274.90 81.25L272.81 84.78C272.38 85.42 272.55 85.29 272.30 85.70L271.25 87.47C271.16 87.61 271.09 87.76 270.99 87.89C270.78 88.18 270.65 88.45 270.47 88.75C270.36 88.95 270.28 88.98 270.17 89.18C270.15 89.22 270.14 89.25 270.12 89.30L268.90 91.42C268.77 91.63 268.45 92.09 268.44 92.35"/><path fill="#2728c0" fill-rule="evenodd" d="M255.55 78.12C253.90 78.12 251.79 78.07 250.27 78.12C250.27 78.38 250.38 78.41 250.52 78.57L253.38 81.90C253.97 82.56 253.81 82.49 254.54 83.15L254.70 83.32C255.04 83.81 255.01 83.70 255.29 84.06L257.87 86.99C258.08 87.28 257.89 91.54 257.96 92.36L263.16 92.33C263.23 91.48 263.18 89.30 263.18 88.22C263.18 86.93 263.05 87.40 263.64 86.61C264.02 86.10 265.40 84.66 265.88 84.10C266.23 83.68 266.71 83.01 267.13 82.60L269.20 80.20C269.67 79.74 270.19 79.05 270.66 78.55C270.80 78.40 270.86 78.38 270.87 78.12C270.09 78.10 265.20 78.01 264.89 78.17C264.62 78.29 264.87 78.17 264.73 78.31C264.50 78.56 264.83 78.22 264.65 78.40L260.62 82.95C260.37 82.88 260.21 82.64 260.01 82.38L258.43 80.58C257.90 79.98 257.63 79.57 257.09 79.05C256.56 78.54 256.89 78.78 256.56 78.43C256.17 78.04 256.34 78.11 255.55 78.12"/><path fill="#2728c0" fill-rule="evenodd" d="M275.02 100.73C274.61 100.71 274.69 100.72 274.41 100.60L272.71 100.28C272.36 100.17 269.51 99.97 268.94 99.92C268.14 99.86 265.95 99.88 264.99 99.85L262.38 99.70C261.76 99.62 260.67 99.32 260.87 98.50L261.15 98.08C261.60 97.75 262.39 97.74 262.81 97.69C263.12 97.65 262.98 97.58 263.32 97.56C263.52 97.55 263.76 97.56 263.96 97.55C265.69 97.54 268.76 97.45 270.26 97.79C270.78 97.91 271.03 97.95 271.38 98.20C271.52 98.30 271.63 98.40 271.73 98.59C271.86 98.84 271.80 98.94 271.89 99.16C272.08 99.23 272.03 99.23 272.27 99.23C273.19 99.23 277.10 99.27 277.69 99.21C277.77 98.55 277.69 97.99 277.46 97.52C277.37 97.33 277.30 96.96 277.20 96.79C277.07 96.55 276.97 96.43 276.82 96.25C273.53 92.43 259.20 93.62 257.08 95.12C256.43 95.58 256.23 95.57 255.71 96.19C255.35 96.62 255.23 97.01 255.05 97.55C254.82 98.25 254.95 99.31 255.14 99.97C255.46 101.12 256.55 101.87 257.68 102.23C260.48 103.11 262.74 103.10 265.75 103.22C266.67 103.26 267.64 103.24 268.57 103.25C269.18 103.25 269.71 103.37 270.49 103.42C270.65 103.43 270.68 103.43 270.81 103.47C271.45 103.67 272.49 104.12 272.04 105.06C271.56 106.04 268.78 105.94 267.35 105.94C265.86 105.94 263.35 106.03 262.07 105.74C259.95 105.24 261.05 104.26 260.19 104.26L255.08 104.26C254.58 104.26 254.61 104.33 254.66 104.85C254.80 106.19 255.38 107.26 256.47 108.08C257.26 108.66 258.50 109.00 259.46 109.24C261.72 109.79 267.51 109.73 270.23 109.63C270.72 109.61 271.02 109.49 271.51 109.47C272.24 109.44 273.77 109.16 274.51 108.91C274.64 108.86 274.92 108.77 275.02 108.73C276.12 108.23 276.72 107.93 277.43 106.90C278.03 106.03 278.10 104.45 277.83 103.48C277.64 102.76 277.32 102.27 276.75 101.76C276.07 101.15 275.18 101.05 275.02 100.73"/><path fill="#2728c0" fill-rule="evenodd" d="M246.13 98.35C246.15 98.36 246.16 98.36 246.18 98.36M246.19 98.37C246.55 98.49 246.86 98.89 247.03 99.21C247.14 99.41 247.18 99.64 247.17 99.95C247.16 100.30 247.03 100.47 247.05 100.65C246.81 100.79 246.84 100.84 246.68 101.01C246.57 101.14 246.41 101.24 246.29 101.32C246.04 101.47 245.69 101.65 245.36 101.70C244.91 101.76 237.59 101.76 237.18 101.69L237.18 98.08L246.13 98.35M244.16 105.64C244.31 105.68 244.36 105.87 244.50 106.04L246.68 109.29L253.16 109.28C253.10 108.92 252.61 108.43 252.39 108.07L250.83 105.67C250.68 105.45 250.16 104.72 250.09 104.49C250.43 104.19 250.81 103.95 251.18 103.70C251.24 103.66 251.39 103.51 251.46 103.43C252.40 102.39 252.64 102.01 252.97 100.55C253.17 99.67 252.84 98.22 252.28 97.33C252.08 97.02 251.46 96.34 251.15 96.09L250.44 95.61C250.00 95.34 250.40 95.47 249.69 95.14C249.56 95.07 249.68 95.07 249.39 94.93C249.19 94.84 249.18 94.86 248.97 94.79C248.42 94.59 247.68 94.29 247.07 94.34C246.49 94.35 245.76 94.27 245.11 94.27C243.28 94.27 231.96 94.20 231.41 94.30C231.27 94.76 231.36 106.03 231.36 107.89C231.36 108.37 231.26 109.19 231.50 109.26C231.63 109.30 234.30 109.27 234.69 109.27C237.51 109.27 237.06 109.48 237.06 108.49C237.06 107.91 236.97 105.95 237.11 105.58C237.49 105.41 239.98 105.50 240.63 105.50L243.77 105.49C244.22 105.51 244.12 105.57 244.16 105.64"/><path fill="#2728c0" fill-rule="evenodd" d="M228.85 97.92L228.80 94.38C228.22 94.26 210.07 94.25 209.39 94.38C209.34 95.73 209.33 109.00 209.43 109.22L228.80 109.22L228.83 105.63C227.34 105.63 215.46 105.70 215.07 105.57C214.95 105.29 214.97 103.95 215.05 103.58L227.76 103.55L227.82 99.94L215.00 99.71L215.05 98.00C215.65 97.81 226.89 98.02 228.85 97.92"/><path fill="#2728c0" fill-rule="evenodd" d="M288.01 103.87L290.75 99.43C291.12 100.03 293.23 103.14 293.41 103.87L288.01 103.87ZM284.17 109.29C284.57 109.29 284.53 109.36 285.00 108.55C285.19 108.23 285.39 107.89 285.60 107.61L295.89 107.62C295.95 107.70 295.97 107.73 296.03 107.84C296.04 107.85 296.04 107.86 296.05 107.88C296.06 107.89 296.07 107.90 296.08 107.92L296.89 109.27C297.66 109.33 302.55 109.36 303.11 109.24L293.56 94.25C291.98 94.25 288.97 94.19 287.55 94.26L278.27 109.29L284.17 109.29Z"/><path fill="#2728c0" fill-rule="evenodd" d="M198.74 100.80C198.93 100.51 200.46 99.44 200.85 99.15C201.29 98.82 202.06 98.29 202.45 97.93C202.90 97.52 202.82 97.65 203.27 97.32C203.35 97.26 203.44 97.18 203.51 97.12C203.72 96.96 203.86 96.91 204.06 96.74L206.22 95.15C206.80 94.67 207.13 94.63 207.14 94.25L200.36 94.25C199.75 94.25 199.65 94.53 199.22 94.81L193.56 99.02C193.32 99.22 192.84 99.64 192.56 99.64L192.56 95.29C192.56 94.58 192.69 94.25 192.17 94.25C191.17 94.25 187.48 94.19 186.76 94.27L186.74 109.04C186.74 109.38 186.88 109.32 187.25 109.31C188.47 109.30 191.91 109.39 192.60 109.25L192.62 105.34C192.81 105.15 193.32 104.73 193.54 104.58C193.95 104.33 194.41 103.91 194.60 103.93C194.77 103.96 195.94 105.13 196.15 105.33C196.70 105.82 197.75 106.69 198.23 107.24L199.96 108.75C200.61 109.27 200.26 109.29 200.87 109.29C202.56 109.29 206.33 109.36 207.78 109.28C207.73 109.05 207.73 109.13 207.54 108.96L203.26 105.02C202.62 104.32 202.47 104.34 202.11 103.98C201.68 103.55 198.95 101.14 198.74 100.80"/></svg>
+  <h1>Aplikasi Pelanggan</h1>
+  <div class="muted small" style="margin-top:4px">Status order, surat jalan dan invoice sekolah Anda</div>
+  <div class="field" style="margin-top:24px"><label for="lgWho">Username</label><input id="lgWho" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Contoh: smpn2cimahi"></div>
+  <div class="field"><label for="lgPin">PIN 6 angka</label><input id="lgPin" class="pin" type="password" inputmode="numeric" maxlength="6" autocomplete="current-password" placeholder="......"></div>
+  <div id="lgErr" class="err hide"></div>
+  <button id="lgBtn" class="btn brand block" style="margin-top:22px;min-height:58px;font-size:19px">Masuk</button>
+  <p class="muted small" style="margin-top:18px">Username dan PIN diberikan oleh admin Sadya Kersa. Lupa PIN? Hubungi sales atau admin Sadya Kersa.</p>
+</div>
+
+<div id="vApp" class="hide">
+  <div id="updBar" class="updbar hide" role="status">Ada versi baru aplikasi. Perbarui aplikasi untuk melanjutkan.</div>
+  <div class="top"><div class="in" id="topBar"></div></div>
+  <div class="wrap" id="main"></div>
+  <div class="nav"><div class="in">
+    <button data-nav="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Beranda</button>
+    <button data-nav="kirim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6h13v10H1zM14 10h4l4 4v2h-8"/><circle cx="5.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg>Kiriman</button>
+    <button data-nav="inv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>Invoice</button>
+    <button data-nav="profil"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-5h6v5"/></svg>Sekolah</button>
+  </div></div>
+</div>
+
+<div id="overlay" class="overlay hide"><div class="box"><div class="spin"></div><span id="overlayTxt">Memuat...</span></div></div>
+<div id="toast" class="toast hide"></div>
+<div id="sheet" class="sheet hide"><div class="panel" id="sheetPanel"></div></div>
+
+<script>
+// Aplikasi Pelanggan (app 1.0.0): the school's own app. Talks only to the API's customer calls
+// (PelangganApi.js, app: 'pelanggan'); window.SKP_API is set by the build (sadya-kersa-pelanggan-app).
+var SKP = { token: '', data: null, view: 'home', key: '', filter: 'all', photos: {}, shown: '' };
+var SKP_ICON = {
+  out: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg>',
+  reload: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7L20 8"/><path d="M20 3v5h-5"/></svg>',
+  left: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+  right: '<svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
+  phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>',
+  wa: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3z"/></svg>',
+  cam: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>',
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>'
+};
+var SKP_MARK = '<svg viewBox="26.24 136.16 106.04 106.04" aria-hidden="true"><path fill="#2728c0" d="M54.59 136.16L103.93 136.16C119.53 136.16 132.28 148.92 132.28 164.51L132.28 213.85C132.28 229.44 119.53 242.20 103.93 242.20L54.59 242.20C39.00 242.20 26.24 229.44 26.24 213.85L26.24 164.51C26.24 148.92 39.00 136.16 54.59 136.16"/><path fill="#3152bf" d="M59.64 136.16L57.05 161.73L26.24 184.02L26.24 164.51C26.24 148.92 39.00 136.16 54.59 136.16L59.64 136.16Z"/><path fill="#fb4305" d="M76.71 203.44L132.28 175.41L132.28 213.85C132.28 229.44 119.53 242.20 103.93 242.20L54.59 242.20C53.73 242.20 52.87 242.16 52.03 242.08L76.71 203.44Z"/><path fill="#ffffff" d="M81.74 183.00L112.71 183.00L112.71 195.36L112.71 195.36L95.28 195.36C94.28 195.36 93.45 196.19 93.45 197.19L93.45 197.19C93.45 198.19 94.28 199.02 95.28 199.02L112.71 199.02L112.71 219.16L96.81 219.16L96.81 203.25C96.81 202.25 95.99 201.43 94.99 201.43L94.99 201.43C93.98 201.43 93.16 202.25 93.16 203.25L93.16 219.16L77.26 219.16L77.26 195.36L45.81 195.36L45.81 188.30L45.81 183.35L67.66 183.35C68.67 183.35 69.49 182.53 69.49 181.53L69.49 181.53C69.49 180.52 68.67 179.70 67.66 179.70L45.81 179.70L45.81 159.21L81.74 159.21L81.74 171.69L59.89 171.69C58.88 171.69 58.06 172.51 58.06 173.52L58.06 173.52C58.06 174.52 58.88 175.34 59.89 175.34L81.74 175.34L81.74 183.00Z"/></svg>';
+var SKP_BULAN = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+var SKP_BULAN_PANJANG = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+var SKP_SJ = { Disiapkan: '', Dikirim: 'amber', Diterima: 'green' };
+var SKP_STEP = { invoice: '', disiapkan: '', dikirim: 'amber', diterima: 'green', masalah: 'red', lunas: 'green' };
+
+function $(id) { return document.getElementById(id); }
+function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+function jsq(s) { return esc(String(s == null ? '' : s).replace(/[\\']/g, function (c) { return c === "'" ? '\\x27' : '\\x5c'; })); }
+function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } return null; }
+function num(n) { return String(Math.round(+n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+function rp(n) { return 'Rp ' + String(Math.round(+n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+function tgl(iso) { if (!iso) return '-'; var p = String(iso).slice(0, 10).split('-'); return (+p[2]) + ' ' + SKP_BULAN[+p[1] - 1] + ' ' + p[0]; }
+function tglPanjang(iso) { var p = String(iso || '').split('-'); return p.length === 3 ? (+p[2]) + ' ' + SKP_BULAN_PANJANG[+p[1] - 1] + ' ' + p[0] : '-'; }
+function waktu() { var h = new Date().getHours(); return h < 11 ? 'pagi' : h < 15 ? 'siang' : h < 18 ? 'sore' : 'malam'; }
+function stamp(s) { return s ? tgl(String(s).slice(0, 10)) + (String(s).length > 10 ? ', ' + String(s).slice(11, 16) : '') : ''; }
+function qty(q) { return String(q).replace('.', ','); }
+function busy(on, txt) { $('overlayTxt').textContent = txt || 'Memuat...'; $('overlay').classList.toggle('hide', !on); }
+var SKP_TOAST = 0;
+function toast(msg) { var t = $('toast'); t.textContent = msg; t.classList.remove('hide'); clearTimeout(SKP_TOAST); SKP_TOAST = setTimeout(function () { t.classList.add('hide'); }, Math.max(3200, String(msg).length * 70)); }
+function nativePlugin(name) { var c = window.Capacitor; return c && c.isNativePlatform && c.isNativePlatform() && c.Plugins && c.Plugins[name] ? c.Plugins[name] : null; }
+
+function call(fn) {
+  var args = Array.prototype.slice.call(arguments, 1), cfg = window.SKP_API || {};
+  if (!cfg.url) return Promise.reject(new Error('Aplikasi belum terhubung ke server.'));
+  var ctl = typeof AbortController !== 'undefined' ? new AbortController() : null, timer = setTimeout(function () { if (ctl) ctl.abort(); }, 45000);
+  return fetch(cfg.url, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, redirect: 'follow',
+    body: JSON.stringify({ app: 'pelanggan', fn: fn, args: args, v: cfg.version }), signal: ctl ? ctl.signal : undefined })
+    .then(function (r) { clearTimeout(timer); if (!r.ok) throw new Error('Koneksi bermasalah (HTTP ' + r.status + '). Coba lagi.'); return r.text(); },
+      function () { clearTimeout(timer); throw new Error('Tidak ada koneksi internet. Coba lagi.'); })
+    .then(function (txt) {
+      var j; try { j = JSON.parse(txt); } catch (e) { throw new Error('Jawaban server tidak terbaca. Coba lagi.'); }
+      if (j && j.ok) { $('updBar').classList.add('hide'); return j.data; }
+      if (j && j.error === 'UPDATE_APP') { $('updBar').classList.remove('hide'); throw new Error('Versi aplikasi ini sudah lama. Perbarui aplikasi.'); }
+      if (j && j.error === 'SESI_HABIS') { logoutLocal('Sesi habis, silakan masuk lagi.'); throw new Error('Sesi habis, silakan masuk lagi.'); }
+      throw new Error(j && j.error ? j.error : 'Server tidak menjawab.');
+    });
+}
+
+// ---------- login ----------
+function showLogin(msg) { $('vApp').classList.add('hide'); $('vLogin').classList.remove('hide'); $('lgErr').classList.toggle('hide', !msg); $('lgErr').textContent = msg || ''; }
+function doLogin() {
+  var who = $('lgWho').value.trim(), pin = $('lgPin').value.trim();
+  if (!who || !/^\d{6}$/.test(pin)) { showLogin('Isi username dan PIN 6 angka.'); return; }
+  busy(true, 'Masuk...');
+  call('skpLogin', who, pin).then(function (r) {
+    SKP.token = r.token; store('skp_token', r.token); store('skp_who', who); $('lgPin').value = '';
+    return loadHome(true);
+  }).catch(function (e) { busy(false); showLogin(e.message); });
+}
+function logoutLocal(msg) { SKP.token = ''; SKP.data = null; SKP.photos = {}; store('skp_token', null); store('skp_home', null); showLogin(msg || ''); }
+function doLogout() {
+  if (!confirm('Keluar dari aplikasi di HP ini?')) return;
+  var t = SKP.token; logoutLocal(''); call('skpLogout', t).catch(function () {});
+}
+function loadHome(spinner) {
+  if (spinner) busy(true, 'Memuat data...');
+  return call('skpHome', SKP.token).then(function (d) {
+    busy(false); SKP.data = d; store('skp_home', JSON.stringify(d));
+    $('vLogin').classList.add('hide'); $('vApp').classList.remove('hide'); render();
+  }).catch(function (e) { busy(false); if (SKP.token) toast(e.message); });
+}
+
+// ---------- screens ----------
+function setTop(html) { $('topBar').innerHTML = html; }
+function backTop(view, label, title, sub) {
+  setTop('<div><button class="back" onclick="go(\'' + view + '\')">' + SKP_ICON.left + esc(label) + '</button><h1>' + esc(title) + '</h1>' + (sub ? '<div class="sub">' + esc(sub) + '</div>' : '') + '</div>');
+}
+function go(view, key) { SKP.view = view; if (key !== undefined) SKP.key = key; render(); window.scrollTo(0, 0); }
+function navOf(v) { return v === 'sj' ? 'kirim' : v === 'invd' ? 'inv' : v; }
+function render() {
+  var d = SKP.data; if (!d) return;
+  var m = $('main'), v = SKP.view, nav = navOf(v);
+  Array.prototype.forEach.call(document.querySelectorAll('.nav button'), function (b) {
+    var n = b.getAttribute('data-nav'), c = n === 'kirim' ? d.totals.toConfirm : n === 'inv' ? d.totals.toVerify : 0, badge = b.querySelector('i');
+    b.classList.toggle('on', n === nav);
+    if (c && !badge) { badge = document.createElement('i'); b.appendChild(badge); }
+    if (badge) { if (c) badge.textContent = c; else badge.remove(); }
+  });
+  m.innerHTML = v === 'kirim' ? vKirim(d) : v === 'sj' ? vSj(d) : v === 'inv' ? vInv(d) : v === 'invd' ? vInvD(d) : v === 'profil' ? vProfil(d) : vHome(d);
+  m.classList.toggle('anim', SKP.shown !== v); SKP.shown = v;
+  $('vApp').querySelector('.top').classList.toggle('homebar', v === 'home');
+}
+function sjOf(no) { return (SKP.data.deliveries || []).filter(function (s) { return s.no === no; })[0] || null; }
+function invOf(no) { return (SKP.data.invoices || []).filter(function (i) { return i.inv === no; })[0] || null; }
+
+function vHome(d) {
+  var t = d.totals;
+  setTop('<div class="brandrow"><span class="mark">' + SKP_MARK + '</span><div><div class="sub">Selamat ' + waktu() + '</div><h1>' + esc(d.me.name) + '</h1></div></div>' +
+    '<div style="display:flex;gap:8px"><button class="iconbtn" onclick="loadHome(true)" aria-label="Muat ulang">' + SKP_ICON.reload + '</button></div>');
+  var h = '<div class="float lift rise" style="--i:0"><div class="stats">' +
+    '<button' + (t.toConfirm ? ' class="warn"' : '') + ' onclick="go(\'kirim\')"><b>' + t.toConfirm + '</b><span>kiriman perlu dikonfirmasi</span></button>' +
+    '<button' + (t.toVerify ? ' class="warn"' : '') + ' onclick="SKP.filter=\'cek\';go(\'inv\')"><b>' + t.toVerify + '</b><span>invoice perlu dicek</span></button>' +
+    '<button onclick="SKP.filter=\'belum\';go(\'inv\')"><b>' + esc(rpShort(t.unpaid)) + '</b><span>belum lunas, ' + t.unpaidCount + ' invoice</span></button></div></div>';
+  var todo = [];
+  (d.deliveries || []).filter(function (s) { return s.status === 'Dikirim'; }).forEach(function (s) {
+    todo.push('<button class="item" onclick="go(\'sj\',\'' + jsq(s.no) + '\')"><span class="t"><b>Barang dalam pengiriman</b><span>' + esc(s.no) + ' · ' + s.lines.length + ' jenis barang. Konfirmasi setelah barang diterima.</span></span>' + SKP_ICON.right + '</button>');
+  });
+  (d.invoices || []).filter(function (i) { return i.canVerify && !i.verif; }).forEach(function (i) {
+    todo.push('<button class="item" onclick="go(\'invd\',\'' + jsq(i.inv) + '\')"><span class="t"><b>Cek invoice ' + esc(i.inv) + '</b><span>Barang sudah diterima. Pastikan invoice sesuai.</span></span>' + SKP_ICON.right + '</button>');
+  });
+  (d.invoices || []).filter(function (i) { return i.verif && i.verif.status === 'Tidak sesuai' && i.verif.answered; }).slice(0, 3).forEach(function (i) {
+    todo.push('<button class="item" onclick="go(\'invd\',\'' + jsq(i.inv) + '\')"><span class="t"><b>Tanggapan untuk ' + esc(i.inv) + '</b><span>' + esc(i.verif.answer) + '</span></span>' + SKP_ICON.right + '</button>');
+  });
+  h += '<div class="caption">Perlu tindakan</div>' + (todo.length ? todo.join('') : '<div class="card rise" style="--i:1"><span class="muted">Tidak ada yang perlu ditindaklanjuti. Terima kasih.</span></div>');
+  if ((d.waiting || []).length) h += '<div class="caption">Order sedang diproses</div>' + d.waiting.map(function (o) {
+    return '<div class="item"><span class="t"><b>Order ' + esc(tgl(o.date)) + '</b><span>' + o.lines.map(function (l) { return qty(l[1]) + ' ' + l[2] + ' ' + l[0]; }).map(esc).join(', ') + '</span><span class="tags"><i class="tag amber">Menunggu konfirmasi Sadya Kersa</i></span></span></div>';
+  }).join('');
+  var recent = (d.invoices || []).filter(function (i) { return i.status !== 'Lunas' || i.sj.length; }).slice(0, 5);
+  if (recent.length) h += '<div class="caption">Status order</div>' + recent.map(invRow).join('');
+  if (d.sales) h += salesCard(d.sales);
+  return h;
+}
+function rpShort(v) { v = Math.round(+v || 0); return v >= 1e9 ? 'Rp ' + String(Math.round(v / 1e8) / 10).replace('.', ',') + ' M' : v >= 1e6 ? 'Rp ' + String(Math.round(v / 1e5) / 10).replace('.', ',') + ' jt' : rp(v); }
+function salesCard(s) {
+  var ph = String(s.phone || '');
+  return '<div class="caption">Sales Anda</div><div class="card"><b style="color:var(--ink);font-size:18px">' + esc(s.name) + '</b><div class="muted small">Sadya Kersa</div>' +
+    (ph ? '<div class="btnrow"><a class="btn" href="tel:' + esc(ph) + '">' + SKP_ICON.phone + 'Telepon</a><a class="btn wa" href="https://wa.me/62' + esc(ph.slice(1)) + '" target="_blank" rel="noopener">' + SKP_ICON.wa + 'WhatsApp</a></div>' : '') + '</div>';
+}
+function invRow(i) {
+  return '<button class="item" onclick="go(\'invd\',\'' + jsq(i.inv) + '\')"><span class="t"><b>' + esc(i.inv) + '</b><span>' + esc(tgl(i.date)) + ' · ' + i.lines.length + ' jenis barang</span>' +
+    '<span class="tags"><i class="tag ' + (SKP_STEP[i.step.code] || '') + '">' + esc(i.step.text) + '</i>' + (i.status === 'Lunas' ? '' : '<i class="tag grey">Belum lunas</i>') + '</span></span>' +
+    '<span class="r"><b>' + esc(rpShort(i.total)) + '</b></span></button>';
+}
+
+// Delivery notes, newest first; a note opens as a document with its photo and the confirm button.
+function vKirim(d) {
+  setTop('<div><h1>Kiriman</h1><div class="sub">Surat jalan barang ke sekolah</div></div>');
+  var l = d.deliveries || [];
+  if (!l.length) return '<div class="card">Belum ada surat jalan. Surat jalan muncul di sini saat barang disiapkan Sadya Kersa.</div>';
+  return l.map(function (s, n) {
+    return '<button class="item rise" style="--i:' + Math.min(n, 8) + '" onclick="go(\'sj\',\'' + jsq(s.no) + '\')"><span class="t"><b>' + esc(s.no) + '</b><span>' + esc(tgl(s.date)) + ' · invoice ' + esc(s.inv) + ' · ' + s.lines.length + ' jenis barang</span></span>' +
+      '<span class="r"><i class="tag ' + (SKP_SJ[s.status] || '') + '">' + esc(s.status === 'Dikirim' ? 'Perlu dikonfirmasi' : s.status) + '</i></span></button>';
+  }).join('');
+}
+function logoHtml() { var l = document.querySelector('#vLogin .logo'); return l ? l.outerHTML : '<b>Sadya Kersa</b>'; }
+function vSj(d) {
+  var s = sjOf(SKP.key);
+  backTop('kirim', 'Kiriman', SKP.key, s ? 'Invoice ' + s.inv : '');
+  if (!s) return '<div class="note amber">Surat jalan tidak ditemukan. Muat ulang data.</div>';
+  var st = ['Disiapkan', 'Dikirim', 'Diterima'], at = st.indexOf(s.status);
+  var h = '<div class="steps">' + st.map(function (x, i) { return '<div' + (i <= at ? ' class="on"' : '') + '>' + x + '</div>'; }).join('') + '</div>';
+  h += '<div class="doc"><div class="dochead">' + logoHtml() + '<div><b>SURAT JALAN</b><span>' + esc(s.no) + '</span></div></div>' +
+    '<dl class="kv"><dt>Tanggal kirim</dt><dd>' + esc(tglPanjang(s.date)) + '</dd><dt>Kepada</dt><dd>' + esc(d.me.name) + '</dd><dt>Alamat</dt><dd style="white-space:pre-wrap">' + esc(s.address) + '</dd><dt>No. invoice</dt><dd>' + esc(s.inv) + '</dd></dl>' +
+    '<table class="dtab"><thead><tr><th class="no">No</th><th>Barang</th><th class="n">Jumlah</th></tr></thead><tbody>' + s.lines.map(function (l, i) {
+      return '<tr><td>' + (i + 1) + '</td><td>' + esc(l.item) + '</td><td class="n">' + esc(qty(l.qty)) + ' ' + esc(l.unit) + '</td></tr>';
+    }).join('') + '</tbody></table>' + (s.note ? '<p class="small" style="white-space:pre-wrap">' + esc(s.note) + '</p>' : '') +
+    '<div class="sign"><div>Pengirim<span>' + esc(s.sent ? 'Sadya Kersa' : '') + '</span></div><div>Penerima<span>' + esc(s.gotBy || '') + (s.got ? '<br>' + esc(stamp(s.got)) : '') + '</span></div></div></div>';
+  if (!nativePlugin('App') && typeof window.print === 'function') h += '<button class="btn block" style="margin-top:12px" onclick="window.print()">Cetak surat jalan</button>';
+  if (s.status !== 'Disiapkan') {
+    h += '<div class="caption">Bukti kirim</div><div class="card"><dl class="kv"><dt>Dikirim</dt><dd>' + esc(stamp(s.sent)) + '</dd>' + (s.other ? '<dt>Bukti lain</dt><dd>' + esc(s.other) + '</dd>' : '') + '</dl>';
+    if (s.photo) { var p = SKP.photos[s.no]; h += !p ? '<button class="btn block" style="margin-top:10px" onclick="loadPhoto(\'' + jsq(s.no) + '\')">' + SKP_ICON.cam + 'Lihat foto bukti kirim</button>' : p.err ? '<div class="note amber">' + esc(p.err) + '</div>' : '<img class="sjphoto" src="' + esc(p.url) + '" alt="Foto bukti kirim">'; }
+    h += '</div>';
+  }
+  if (s.status === 'Dikirim') h += '<button class="btn cta block" style="margin-top:16px;min-height:58px;font-size:18px" onclick="confirmSheet(\'' + jsq(s.no) + '\')">' + SKP_ICON.check + 'Barang sudah diterima</button>' +
+    '<p class="muted small">Tekan setelah barang diperiksa dan jumlahnya sesuai surat jalan.</p>';
+  if (s.status === 'Diterima') h += '<div class="note">Diterima ' + esc(stamp(s.got)) + ' oleh ' + esc(s.gotBy) + '.' + (s.schoolNote ? ' Catatan: ' + esc(s.schoolNote) : '') + '</div>';
+  if (s.status === 'Disiapkan') h += '<div class="note">Barang sedang disiapkan. Tombol konfirmasi muncul setelah barang dikirim.</div>';
+  return h;
+}
+function loadPhoto(no) {
+  busy(true, 'Memuat foto...');
+  call('skpPhoto', SKP.token, no).then(function (url) { busy(false); SKP.photos[no] = { url: url }; render(); })
+    .catch(function (e) { busy(false); SKP.photos[no] = { err: e.message }; render(); });
+}
+function openSheet(html) { $('sheetPanel').innerHTML = html; $('sheet').classList.remove('hide'); }
+function closeSheet() { $('sheet').classList.add('hide'); }
+function confirmSheet(no) {
+  var p = SKP.data.profile || {};
+  openSheet('<h2>Konfirmasi barang diterima</h2><p class="muted small" style="margin-top:-4px">' + esc(no) + '. Nama penerima tercatat di surat jalan.</p>' +
+    '<div class="field"><label for="cfName">Nama penerima</label><input id="cfName" type="text" value="' + esc(p.pic || '') + '"></div>' +
+    '<div class="field"><label for="cfNote">Catatan <span class="muted small">(boleh kosong)</span></label><textarea id="cfNote" placeholder="Contoh: 1 kursi lecet di kaki"></textarea></div>' +
+    '<div id="cfErr" class="err hide"></div><div class="btnrow"><button class="btn" onclick="closeSheet()">Batal</button><button class="btn cta" onclick="doConfirm(\'' + jsq(no) + '\')">Konfirmasi</button></div>');
+}
+function doConfirm(no) {
+  busy(true, 'Menyimpan...');
+  call('skpConfirm', SKP.token, no, $('cfName').value, $('cfNote').value).then(function () {
+    closeSheet(); toast('Terima kasih. Penerimaan barang tercatat.'); return loadHome(false);
+  }).then(function () { busy(false); }).catch(function (e) { busy(false); var el = $('cfErr'); el.textContent = e.message; el.classList.remove('hide'); });
+}
+
+// Invoices: filter chips, then one invoice as a document with its check buttons.
+function vInv(d) {
+  setTop('<div><h1>Invoice</h1><div class="sub">Dibuat otomatis dari order sekolah Anda</div></div>');
+  var l = d.invoices || [], fl = SKP.filter || 'all';
+  var pass = function (i) { return fl === 'all' || (fl === 'belum' ? i.status !== 'Lunas' : i.canVerify && !i.verif); };
+  var chips = [['all', 'Semua (' + l.length + ')'], ['belum', 'Belum lunas (' + l.filter(function (i) { return i.status !== 'Lunas'; }).length + ')'], ['cek', 'Perlu dicek (' + d.totals.toVerify + ')']];
+  var list = l.filter(pass);
+  return '<div class="seg">' + chips.map(function (c) { return '<button class="chip' + (fl === c[0] ? ' on' : '') + '" onclick="SKP.filter=\'' + c[0] + '\';render()">' + esc(c[1]) + '</button>'; }).join('') + '</div>' +
+    (list.length ? list.map(invRow).join('') : '<div class="card muted">Tidak ada invoice di sini.</div>');
+}
+function vInvD(d) {
+  var i = invOf(SKP.key);
+  backTop('inv', 'Invoice', SKP.key, i ? tglPanjang(i.date) : '');
+  if (!i) return '<div class="note amber">Invoice tidak ditemukan. Muat ulang data.</div>';
+  var h = '<div class="tags" style="margin-top:14px"><i class="tag ' + (SKP_STEP[i.step.code] || '') + '">' + esc(i.step.text) + '</i>' + (i.status === 'Lunas' ? '<i class="tag green">Lunas' + (i.paidDate ? ' ' + esc(tgl(i.paidDate)) : '') + '</i>' : '<i class="tag grey">Belum lunas</i>') + '</div>';
+  h += '<div class="doc"><div class="dochead">' + logoHtml() + '<div><b>INVOICE</b><span>' + esc(i.inv) + '</span></div></div>' +
+    '<dl class="kv"><dt>Tanggal</dt><dd>' + esc(tglPanjang(i.date)) + '</dd><dt>Kepada</dt><dd>' + esc(SKP.data.me.name) + '</dd>' + (i.mkt && i.mkt !== '-' ? '<dt>Melalui</dt><dd>' + esc(i.mkt) + '</dd>' : '') + '</dl>' +
+    '<table class="dtab"><thead><tr><th>Barang</th><th class="n">Jumlah</th><th class="n v">Nilai (Rp)</th></tr></thead><tbody>' + i.lines.map(function (l) {
+      return '<tr><td>' + esc(l[0] || 'Barang') + '</td><td class="n">' + esc(qty(l[1])) + ' ' + esc(l[2]) + '</td><td class="n v">' + esc(num(l[3])) + '</td></tr>';
+    }).join('') + '</tbody><tfoot><tr><td colspan="2">Total</td><td class="n v">' + esc(num(i.total)) + '</td></tr></tfoot></table>' +
+    (i.fresh ? '<p class="muted small">Order baru disetujui; rincian pajak mengikuti dokumen SIPLah.</p>' : '') + '</div>';
+  if (!nativePlugin('App') && typeof window.print === 'function') h += '<button class="btn block" style="margin-top:12px" onclick="window.print()">Cetak invoice</button>';
+  if (i.sj.length) h += '<div class="caption">Surat jalan</div>' + i.sj.map(function (no) { var s = sjOf(no) || {}; return '<button class="item" onclick="go(\'sj\',\'' + jsq(no) + '\')"><span class="t"><b>' + esc(no) + '</b><span>' + esc(s.status || '') + '</span></span>' + SKP_ICON.right + '</button>'; }).join('');
+  var v = i.verif;
+  h += '<div class="caption">Verifikasi sekolah</div><div class="card">';
+  if (v && v.status === 'Sesuai') h += '<b style="color:var(--green)">Invoice sesuai.</b><div class="muted small">' + esc(stamp(v.at)) + ' oleh ' + esc(v.by) + '</div>';
+  else if (v && v.status === 'Tidak sesuai') h += '<b style="color:var(--red)">Ditandai tidak sesuai.</b><div class="small" style="margin-top:4px">' + esc(v.note) + '</div>' +
+    (v.answered ? '<div class="note"><b>Tanggapan Sadya Kersa:</b> ' + esc(v.answer) + '</div>' : '<div class="muted small" style="margin-top:6px">Menunggu tanggapan Sadya Kersa.</div>');
+  else if (!i.canVerify) h += '<span class="muted">' + (i.sj.length ? 'Konfirmasi dulu semua barang yang diterima di menu Kiriman, lalu cek invoice ini.' : i.status === 'Lunas' ? 'Invoice ini sudah lunas.' : 'Invoice bisa dicek setelah barang dikirim dan diterima.') + '</span>';
+  if (i.canVerify) h += (v ? '<p class="small" style="margin:10px 0 0">Bila sudah sesuai setelah tanggapan, tandai sesuai:</p>' : '<p class="small" style="margin:0">Barang sudah diterima. Apakah barang, jumlah dan nilai di invoice ini sesuai?</p>') +
+    '<div class="btnrow"><button class="btn cta" onclick="verifyOk(\'' + jsq(i.inv) + '\')">' + SKP_ICON.check + 'Invoice sesuai</button>' + (v ? '' : '<button class="btn" onclick="verifyBadSheet(\'' + jsq(i.inv) + '\')">Ada yang tidak sesuai</button>') + '</div>';
+  return h + '</div>';
+}
+function verifyOk(inv) {
+  if (!confirm('Tandai invoice ' + inv + ' sesuai? Pilihan ini tidak bisa diubah.')) return;
+  busy(true, 'Menyimpan...');
+  call('skpVerify', SKP.token, inv, true, '').then(function () { toast('Terima kasih. Invoice ditandai sesuai.'); return loadHome(false); })
+    .then(function () { busy(false); }).catch(function (e) { busy(false); toast(e.message); });
+}
+function verifyBadSheet(inv) {
+  openSheet('<h2>Ada yang tidak sesuai</h2><p class="muted small" style="margin-top:-4px">' + esc(inv) + '. Tulis bagian yang tidak sesuai; Sadya Kersa akan menanggapi di aplikasi ini.</p>' +
+    '<div class="field"><label for="vbNote">Yang tidak sesuai</label><textarea id="vbNote" placeholder="Contoh: jumlah kursi di invoice 40, yang diterima 38"></textarea></div>' +
+    '<div id="vbErr" class="err hide"></div><div class="btnrow"><button class="btn" onclick="closeSheet()">Batal</button><button class="btn cta" onclick="doVerifyBad(\'' + jsq(inv) + '\')">Kirim</button></div>');
+}
+function doVerifyBad(inv) {
+  busy(true, 'Mengirim...');
+  call('skpVerify', SKP.token, inv, false, $('vbNote').value).then(function () { closeSheet(); toast('Catatan terkirim ke Sadya Kersa.'); return loadHome(false); })
+    .then(function () { busy(false); }).catch(function (e) { busy(false); var el = $('vbErr'); el.textContent = e.message; el.classList.remove('hide'); });
+}
+
+// The school's own record: PIC, address, its bank account (for cash back), and orders per year.
+function vProfil(d) {
+  setTop('<div><h1>Data sekolah</h1><div class="sub">' + esc(d.me.name) + '</div></div>');
+  var p = d.profile || {}, years = Object.keys(d.totals.years || {}).sort().reverse();
+  var h = '<div class="card"><dl class="kv"><dt>PIC</dt><dd>' + esc(p.pic || '-') + (p.role ? '<br><span class="muted small">' + esc(p.role) + '</span>' : '') + '</dd>' +
+    '<dt>No HP</dt><dd>' + esc(p.phone || '-') + '</dd><dt>Email</dt><dd>' + esc(p.email || '-') + '</dd><dt>Alamat kirim</dt><dd style="white-space:pre-wrap">' + esc(p.address || '-') + '</dd>' +
+    '<dt>Rekening sekolah</dt><dd>' + (p.account ? esc(p.bank) + '<br>' + esc(p.account) + '<br><span class="muted small">a.n. ' + esc(p.holder) + '</span>' : '-') + '</dd></dl>' +
+    '<button class="btn brand block" style="margin-top:14px" onclick="profileSheet()">Ubah data sekolah</button></div>';
+  if (!p.pic || !p.phone || !p.address) h += '<div class="note amber">Lengkapi PIC, nomor HP dan alamat kirim agar pengiriman lancar.</div>';
+  h += '<div class="caption">Transaksi per tahun</div><div class="card">' + (years.length ? years.map(function (y) {
+    return '<div class="lrow"><span>' + esc(y) + '</span><b>' + esc(rp(d.totals.years[y])) + '</b></div>';
+  }).join('') : '<span class="muted">Belum ada transaksi.</span>') + '</div>';
+  h += '<div class="caption">Akun</div><div class="card"><dl class="kv"><dt>Username</dt><dd>' + esc(d.me.user) + '</dd></dl>' +
+    '<button class="btn block" style="margin-top:12px" onclick="doLogout()">' + SKP_ICON.out + 'Keluar</button></div>';
+  var cfg = window.SKP_API || {};
+  h += '<p class="muted small" style="text-align:center;margin-top:18px">Aplikasi Pelanggan Sadya Kersa' + (cfg.version ? ' · versi ' + esc(cfg.version) : '') +
+    (/^https:\/\//.test(cfg.privacy || '') ? ' · <a href="' + esc(cfg.privacy) + '" target="_blank" rel="noopener">Kebijakan privasi</a>' : '') + '</p>';
+  return h;
+}
+function profileSheet() {
+  var p = SKP.data.profile || {};
+  var f = function (id, label, v, type, ph) { return '<div class="field"><label for="' + id + '">' + label + '</label><input id="' + id + '" type="' + (type || 'text') + '" value="' + esc(v) + '"' + (ph ? ' placeholder="' + esc(ph) + '"' : '') + '></div>'; };
+  openSheet('<h2>Ubah data sekolah</h2>' + f('pPic', 'Nama PIC', p.pic) + f('pRole', 'Jabatan PIC', p.role, '', 'Contoh: Bendahara BOS') + f('pPhone', 'No HP PIC', p.phone, 'tel', '0812 3456 7890') +
+    f('pEmail', 'Email', p.email, 'email') + '<div class="field"><label for="pAddr">Alamat kirim</label><textarea id="pAddr" placeholder="Alamat lengkap sekolah">' + esc(p.address) + '</textarea></div>' +
+    '<h2 style="margin-top:22px">Rekening sekolah</h2><p class="muted small" style="margin-top:-6px">Untuk pembayaran cash back dari Sadya Kersa. Hanya terlihat oleh sekolah Anda dan admin Sadya Kersa.</p>' +
+    f('pBank', 'Bank', p.bank, '', 'Contoh: BJB') + f('pAcc', 'No rekening', p.account, 'text') + f('pHolder', 'Atas nama', p.holder) +
+    '<div id="pErr" class="err hide"></div><div class="btnrow"><button class="btn" onclick="closeSheet()">Batal</button><button class="btn brand" onclick="saveProfile()">Simpan</button></div>');
+}
+function saveProfile() {
+  var v = function (id) { return $(id).value; };
+  var p = { pic: v('pPic'), role: v('pRole'), phone: v('pPhone'), email: v('pEmail'), address: v('pAddr'), bank: v('pBank'), account: v('pAcc'), holder: v('pHolder') };
+  busy(true, 'Menyimpan...');
+  call('skpProfile', SKP.token, p).then(function (r) { busy(false); SKP.data.profile = r; store('skp_home', JSON.stringify(SKP.data)); closeSheet(); render(); toast('Data sekolah disimpan.'); })
+    .catch(function (e) { busy(false); var el = $('pErr'); el.textContent = e.message; el.classList.remove('hide'); });
+}
+
+// ---------- start ----------
+document.querySelector('.nav').addEventListener('click', function (e) {
+  var b = e.target && e.target.closest ? e.target.closest('button[data-nav]') : null;
+  if (b) { var v = b.getAttribute('data-nav'); if (v === 'inv') SKP.filter = 'all'; go(v); }
+});
+$('sheet').addEventListener('click', function (e) { if (e.target === $('sheet')) closeSheet(); });
+$('lgBtn').addEventListener('click', doLogin);
+$('lgPin').addEventListener('keydown', function (e) { if (e.key === 'Enter') doLogin(); });
+(function nativeSetup() {
+  var launcher = nativePlugin('AppLauncher'), app = nativePlugin('App');
+  if (launcher) document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || !/^(tel:|https?:)/.test(a.getAttribute('href'))) return;
+    e.preventDefault(); launcher.openUrl({ url: a.getAttribute('href') }).catch(function () { toast('Tautan tidak bisa dibuka di HP ini.'); });
+  });
+  if (app) app.addListener('backButton', function () {
+    if (!$('sheet').classList.contains('hide')) { closeSheet(); return; }
+    if (SKP.view === 'sj') { go('kirim'); return; }
+    if (SKP.view === 'invd') { go('inv'); return; }
+    if (SKP.view !== 'home' && SKP.data) { go('home'); return; }
+    app.exitApp();
+  });
+  if (app) app.addListener('resume', function () { if (SKP.token) loadHome(false); });
+})();
+(function start() {
+  SKP.token = store('skp_token') || '';
+  if (store('skp_who')) $('lgWho').value = store('skp_who');
+  if (!SKP.token) { showLogin(''); return; }
+  try { SKP.data = JSON.parse(store('skp_home') || 'null'); } catch (e) { SKP.data = null; }
+  if (SKP.data) { $('vApp').classList.remove('hide'); render(); }
+  loadHome(!SKP.data);
+})();
+</script>
+</body>
+</html>
